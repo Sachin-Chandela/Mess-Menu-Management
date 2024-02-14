@@ -20,10 +20,16 @@ go get "github.com/xuri/excelize/v2"
 <h2>Excelize Library</h2>
 <p>This a very good library for extracting the data from an excel file</p>
 To make a file use 
+<br>
+
 ```
 f, _ := excelize.OpenFile("Sample-Menu.xlsx")
 ```
+<br>
+
 To get the data by column wise use 
+
+<br>
 ```
 cols, _ := f.GetCols("Sheet1")
 ```
