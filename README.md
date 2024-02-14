@@ -154,9 +154,9 @@ func save_json_to_file(jsonData string) {
 ```
 
 <br>
-First we take the our working directory location using os.Getwd() 
-Second code initializes the filename as "menu_data.json" in the current directory.
-Third code used for writong the daa in that file 
+First we take the our working directory location using os.Getwd()<br>
+Second code initializes the filename as "menu_data.json" in the current directory.<br>
+Third code used for writong the daa in that file<br>
 Fourth Code if the file succefully made then print out the that the file has been saved 
 <br>
 
