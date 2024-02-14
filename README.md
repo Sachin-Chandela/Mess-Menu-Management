@@ -3,14 +3,14 @@
 <h2>How To setup your Project</h2>
 <p>Step1:- Open Terminal and type the following command</p>
 <br>
-```
-go mod init project
 
 ```
+go mod init project
+```
+<br>
 then to install excelize use 
 ```
 go get "github.com/xuri/excelize/v2"
-
 ```
 
 
