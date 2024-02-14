@@ -116,7 +116,7 @@ for j := 0; j < len(iteams_breakfast); j++ {
 
 <h2>**I don't use Error Hanlding while making a json file**</h2>
 
-<h3>Function 3 </h3>
+<h3>Function 4 </h3>
 This Function Converts the entire data and save it as json file in the same directory
 For this we need to import some commands as below
 <br>
@@ -158,6 +158,20 @@ First we take the our working directory location using os.Getwd()<br>
 Second code initializes the filename as "menu_data.json" in the current directory.<br>
 Third code used for writong the daa in that file<br>
 Fourth Code if the file succefully made then print out the that the file has been saved 
+<br>
+<h3>5.</h3>
+In this we just have to make a basic Structure.
+<br>
+
+```
+type details struct {
+	day           string
+	date          string
+	meal          string
+	iteam_in_meal map[int]string
+}
+```
+
 <br>
 
 
