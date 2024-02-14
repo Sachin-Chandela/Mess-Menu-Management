@@ -67,5 +67,104 @@ fmt.Println(cols[daynum][breakfast_start+1 : breakfast_end-1])
 
 <br>
 
+<h3>Function 2</h3>
+This Function return the number of iteams in that meal 
+<br>
+
+```
+func num_items(cols [][]string, day string, meal string)
+```
+
+<br>
+So what i have done is fisrt i get the start index and end index of that meal and then use this to get meal
+<br>
+
+```
+fmt.Println(((breakfast_end) - (breakfast_start)) - 2)
+```
+
+<br>
+
+<h3>Function 3</h3>
+This Function checks if the given iteam  is in that particular meal or Not
+for this I make a function named check_iteams
+<br>
+
+```
+func check_iteams(cols [][]string, day string, meal string, iteam_name string)
+```
+
+<br>
+and get the iteam in that meal same as function 2 and then i iterate over it and checks if that iteam is in that meal or not
+<br>
+
+```
+for j := 0; j < len(iteams_breakfast); j++ {
+			if iteams_breakfast[j] == iteam_name {
+				checknum = 1
+				break
+			}
+		}
+		if checknum == 1 {
+			fmt.Println("Iteam is Present")
+		} else {
+			fmt.Println("Iteam is absent")
+		}
+```
+
+<br>
+
+**I don't use Error Hanlding while making a json file**
+
+<h3>Function 3 </h3>
+This Function Converts the entire data and save it as json file in the same directory
+For this we need to import some commands as below
+<br>
+
+```
+    "encoding/json"
+	"fmt"
+	"io/fs"
+	"os"
+	"path/filepath"
+```
+
+<br>
+
+```
+conver_json, _ := json.MarshalIndent(cols, "", "\t")
+```
+
+<br>
+This code takes the cols and then store all of its data into conver_json as json data
+<br>
+Now To save a file that contain all this data we use fuction 
+<br>
+
+```
+func save_json_to_file(jsonData string) {
+	cwd, _ := os.Getwd()
+
+	filename := filepath.Join(cwd, "menu_data.json")
+
+	os.WriteFile(filename, []byte(jsonData), fs.FileMode(0644))
+
+	fmt.Printf("Saved JSON data to file: %s\n", filename)
+}
+```
+
+<br>
+First we take the our working directory location using os.Getwd() 
+Second code initializes the filename as "menu_data.json" in the current directory.
+Third code used for writong the daa in that file 
+Fourth Code if the file succefully made then print out the that the file has been saved 
+<br>
+
+
+
+
+
+
+
 
 
