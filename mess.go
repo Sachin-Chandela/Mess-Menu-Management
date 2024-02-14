@@ -295,6 +295,7 @@ type details struct {
 func main() {
 	f, _ := excelize.OpenFile("Sample-Menu.xlsx")
 	cols, _ := f.GetCols("Sheet1")
+	// Above syntax stores the data column wise in cols
 
 	// Example:-1 returns the corresponding items available for that meal.
 	items(cols, "MONDAY", "BREAKFAST")
