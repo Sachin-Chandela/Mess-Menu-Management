@@ -17,6 +17,18 @@ go get "github.com/xuri/excelize/v2"
 ```
 <br>
 
+<h2>Excelize Library</h2>
+<p>This a very good library for extracting the data from an excel file</p>
+To make a file use 
+```
+f, _ := excelize.OpenFile("Sample-Menu.xlsx")
+```
+To get the data by column wise use 
+```
+cols, _ := f.GetCols("Sheet1")
+```
+<br>
+
 <h3>Function 1</h3>
 <P>So to take day and meal as input and returns the corresponding items available for that meal   i created a function named items</p>
 <br>
