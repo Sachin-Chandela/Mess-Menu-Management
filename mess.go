@@ -306,8 +306,8 @@ func main() {
 	check_iteams(cols, "MONDAY", "BREAKFAST", "CORNFLAKES")
 
 	// Example:-4  TO save data TO Jason FIle
-	// jasonData := convert_to_json((cols))
-	// save_json_to_file(string(jasonData))
+	jasonData := convert_to_json((cols))
+	save_json_to_file(string(jasonData))
 
 	//Example:-5  method that prints the details of each meal instance
 	structure_details := details{"Monday", "05-02-2024", "BREAKFAST", map[int]string{1: "CHOICES OF EGG", 2: "CORNFLAKES", 3: "BREAD +JAM", 4: "POHA", 5: "GRAPES", 6: "TEA+ COFFEE", 7: "MILK"}}
