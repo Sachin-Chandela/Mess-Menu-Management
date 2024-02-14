@@ -19,6 +19,8 @@ go get "github.com/xuri/excelize/v2"
 
 <h3>Function 1</h3>
 <P>So to take day and meal as input and returns the corresponding items available for that meal   i created a function named items</p>
+<br>
+
 ```
 func items(cols [][]string, day string, meal string)
 ```
@@ -37,7 +39,7 @@ for j := 0; j < 100; j++ {
 ```
 
 <br>
-<p>and for the breakfast_end i specify the index of "LUNCH" and for the items I go to that column and takes out the data starting from index breakfast_start to breakfast_end</p>
+<p>and for the breakfast_end i specify the index of "LUNCH" and for the items I go to that column and takes out the data starting from index breakfast_start+1 to breakfast_end-1</p>
 <br>
 
 ```
