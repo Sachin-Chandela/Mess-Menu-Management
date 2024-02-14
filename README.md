@@ -30,6 +30,7 @@ f, _ := excelize.OpenFile("Sample-Menu.xlsx")
 To get the data by column wise use 
 
 <br>
+
 ```
 cols, _ := f.GetCols("Sheet1")
 ```
